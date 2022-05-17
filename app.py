@@ -24,3 +24,6 @@ def index():
         return render_template("result.html", temp=temp, humidity=humidity, wind_speed=wind_speed, city=city)
 
     return render_template("index.html")
+
+if __name__=="__main__":
+     app.run(host="0.0.0.0",port=80)
