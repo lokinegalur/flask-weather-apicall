@@ -3,12 +3,12 @@ provider "google"{
         region = "us-central1"
 }
 
-terraform{
-  backend "gcs" {
-#   bucket = "tfstate-ford-hadoop-playground"
-#   prefix = "tf-state/"
-  }
-}
+# terraform{
+#   backend "gcs" {
+#    bucket = "tfstate-ford-hadoop-playground"
+#    prefix = "tf-state/"
+#   }
+# }
 
 variable "env"{
  type = string
