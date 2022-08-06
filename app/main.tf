@@ -19,6 +19,7 @@ variable "names"{
 }
 
 module "gcs_buckets" {
+  project_id = "ford-hadoop-playground"
   source  = "terraform-google-modules/cloud-storage/google"
   names = var.names
   prefix = var.env
