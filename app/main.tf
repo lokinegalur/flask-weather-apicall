@@ -5,8 +5,8 @@ provider "google"{
 
 terraform{
   backend "gcs" {
-  bucket = "tfstate-ford-hadoop-playground"
-  prefix = "tf-state/"
+#   bucket = "tfstate-ford-hadoop-playground"
+#   prefix = "tf-state/"
   }
 }
 
